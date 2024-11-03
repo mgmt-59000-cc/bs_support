@@ -39,7 +39,7 @@ def format_warehouse_distribution(warehouse_counts, total_orders):
         parts.append(f"  * {count} {'is' if count == 1 else 'are'} for the {warehouse} warehouse region")
     
     if len(parts) > 1:
-        return f"{'\\n'}{'\\n'.join(parts)}"
+        return f"\n{'\n'.join(parts)}"
     return parts[0] if parts else ""
 
 def generate_individual_orders(num_orders):
