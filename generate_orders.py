@@ -122,7 +122,7 @@ def generate_individual_orders(num_orders):
     
     # Print summary of generated files
     print(f"\nCleared existing files and generated {num_orders} new order files in '{output_dir}' directory")
-    print(f"\n{num_orders} orders were created. {format_warehouse_distribution(warehouse_distribution, num_orders)}")
+    print(f"\n{num_orders} orders were created.\n{format_warehouse_distribution(warehouse_distribution, num_orders)}")
     
     print("\nSample of generated files:")
     for filename in generated_files[:3]:  # Show first 3 files
